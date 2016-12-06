@@ -1,0 +1,19 @@
+\contentsline {section}{فهرست مطالب}{2}{section*.1}
+\contentsline {section}{فهرست جداول}{4}{section*.2}
+\contentsline {section}{\numberline {1}مجموعه‌های فازی}{5}{section.1}
+\contentsline {subsection}{\numberline {1‏.‏1}مجموعه‌های کلاسیک}{5}{subsection.1.1}
+\contentsline {subsection}{\numberline {1‏.‏2}تعریف مجموعه‌های فازی}{6}{subsection.1.2}
+\contentsline {subsection}{\numberline {1‏.‏3}عملیات بر روی مجموعه‌های فازی}{7}{subsection.1.3}
+\contentsline {subsection}{\numberline {1‏.‏4}‌اعداد فازی}{7}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1‏.‏4‏.‏1} ‌اعداد فازی قطعه به قطعه درجه دوم}{7}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1‏.‏4‏.‏2}‌اعداد فازی مثلثی}{7}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1‏.‏4‏.‏3}‌اعداد فازی ذوزنقه‌ای}{7}{subsubsection.1.4.3}
+\contentsline {subsection}{\numberline {1‏.‏5}رابطه‌های فازی}{7}{subsection.1.5}
+\contentsline {subsection}{\numberline {1‏.‏6}عملیات بر روی رابطه‌های فازی}{7}{subsection.1.6}
+\contentsline {section}{\numberline {2}منطق فازی}{7}{section.2}
+\contentsline {section}{\numberline {3}کاربرد میانگین فازی برای پیش‌بینی}{7}{section.3}
+\contentsline {section}{\numberline {4}تصمیم‌گیری در محیط فازی}{7}{section.4}
+\contentsline {section}{\numberline {5}کاربرد کنترل فازی}{7}{section.5}
+\contentsline {section}{\numberline {6}مفاهیم اولیه هوش مصنوعی}{7}{section.6}
+\contentsline {section}{\numberline {7}جستجوی آگاهانه و ناآگاهانه}{7}{section.7}
+\contentsline {section}{مراجع}{8}{section*.3}
