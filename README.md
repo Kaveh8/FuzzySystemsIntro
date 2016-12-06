@@ -1,11 +1,17 @@
-#Fuzzy Systems and Artifical Intelligence
+#سیستم‌های فازی و هوش مصنوعی
 
-Writen by LaTeX for Seminar
+####نوشته شده با لاتک برای درس سمینار رشته مهندسی نرم‌افزار
 
-Section 1: Fuzzy Sets
-Section 2: Fuzzy Logic
-Section 3: Fuzzy Averaging for Forecasting
-Section 4: Decision Making in a Fuzzy Environment
-Section 5: Application of Fuzzy Logic Control
-Section 6: AI Introduction
-Section 7: Conscious and Unconscious Search Algorithms
+فصل ۱: مجموعه‌های فازی
+
+فصل ۲: منطق فازی
+
+فصل ۳: کاربرد میانگین فازی برای پیش‌بینی
+
+فصل ۴: تصمیم‌گیری در محیط فازی
+
+فصل ۵: کاربرد کنترل در منطق فازی
+
+فصل ۶: مفاهیم اولیه هوش مصنوعی
+
+فصل ۷: جستجوی آگاهانه و ناآگاهانه
