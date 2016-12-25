@@ -7,6 +7,7 @@
 \usepackage{tocbibind}
 \usepackage{ragged2e}
 \usepackage{xepersian}
+\usepackage{relsize} %math-large
 
 \settextfont[Scale=1]{XB Niloofar}
 \setlatintextfont{Linux Libertine}
@@ -557,7 +558,7 @@ $$
 	\vspace{-0.5cm}
 	\caption{دو مجموعه‌ی فازی $ A $ و $ B $} \label{fig:f_fset_op_exmp}
 \end{figure}\\
-تعریف اجتماع، اشتراک و مکمل برای این مجموعه‌ها بر روی شکل، در ادامه آورده شده است. 
+تعریف اجتماع، اشتراک و مکمل برای این مجموعه‌ها بر روی نمودار، در ادامه آورده شده است. 
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=75mm]{Images/Fig9.png}
@@ -583,7 +584,7 @@ $$
 همه‌ی خواصی که برای مجموعه‌های کلاسیک در جدول 
 \ref{table:t_classic_properties}
 آورده شد، به جز «قوانین متمم» برای مجموعه‌های فازی نیز صادق هستند. 
-قوانین میانه در مجموعه های کلاسیک به صورت 
+قوانین متمم در مجموعه های کلاسیک به صورت 
 $
 A \cap \overline{A} = \varnothing {\rm \ And}\ A \cup \overline{A} = U $
 تعریف می‌شوند. این قوانین توسط نمودار ون نیز در شکل 
@@ -595,30 +596,166 @@ A \cap \overline{A} = \varnothing {\rm \ And}\ A \cup \overline{A} = U $
 	\vspace{-0.5cm}
 	\caption{قوانین متمم برای مجموعه‌های کلاسیک} \label{fig:f_fset_excludedmiddle_classic}
 \end{figure}\\
-واضح است در مجموعه‌های فازی این قانون معتبر نمی‌باشد. نبود این قانون در مجموعه‌های فازی باعث می‌شود که آنها نسبت به مجموعه‌های کلاسیک دقت کمتری داشته باشند ولی این موضوع باعث انعطاف‌پذیری بیشتر مجموعه‌های فازی می‌شود و باعث می‌شود مجموعه‌های فازی برای توصیف ابهام و فرایندهای حاوی اطلاعات ناقص مناسب باشند.
+واضح است در مجموعه‌های فازی این قانون معتبر نمی‌باشد. نبود این قانون در مجموعه‌های فازی باعث می‌شود که آنها نسبت به مجموعه‌های کلاسیک دقت کمتری داشته باشند ولی این موضوع باعث انعطاف‌پذیری بیشتر مجموعه‌های فازی می‌شود و باعث می‌شود مجموعه‌های فازی برای توصیف ابهام و فرایندهای حاوی اطلاعات ناقص، مناسب باشند.
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=75mm]{Images/Fig13.png}
 	\vspace{-0.5cm}
 	\caption{عدم اعتبار قانون متمم برای مجموعه‌های فازی} \label{fig:f_fset_excludedmiddle_fuzzy}
 \end{figure}\cite{Bojadziev2007} 
-
+ \subsection{‌توابع عضویت} 
+ نحوه ایجاد مجموعه‌های فازی و تعریف تابع عضویت آنها بستگی به زمینه و دامنه کاربری آنها دارد. تعریف یک مجموعه فازی برای مفهوم مورد نظر با تعریف یک تابع عضویت مناسب برای آن کامل می‌شود. تعریف تابع عضویت مناسب بسیار مهم است؛ زیرا اگر تابع عضویت تعریف شده برای مجموعه فازی مناسب نباشد، کلیه تحلیل‌ها و بررسی‌ها پس از آن دچار انحراف می‌شوند. در ادامه چندین تابع عضویت متداول در مجموعه‌های فازی آورده شده است.
+ \paragraph{تابع عضویت مثلثی}
+ تابع عضویت مثلثی
+ \LTRfootnote{Triangular}
+  با سه پارامتر تعریف می‌شود که به شرح ذیل است:
+ \begin{equation}\label{eq:e_fset_memfunc_triangle}
+ triangle (x: a, m, b) = \left\{ 
+ \begin{array}{ll}
+ 0 &  x < a, \\ \vspace{0.3cm}
+\mathlarger{\frac{x-a}{m-a}} & a \leq x \leq m, \\ 
+\mathlarger{ \frac{b-x}{b-m}} & m \leq x \leq b, \\
+ 0 & x > b.
+ \end{array}
+ \right.
+ \end{equation}
+پارامترهای $a$ و $b$، به ترتیب ابتدا و انتهای بازه هستند و پارامتر $m$ بیانگر رأس مثلث می‌باشد.(شکل \ref{fig:f_14})
+\cite{Pedrycz2007}
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=75mm]{Images/Fig14.png}
+	\vspace{-0.5cm}
+	\caption{نمونه‌ای از تابع عضویت مثلثی}\label{fig:f_14}
+\end{figure}
+\paragraph{تابع عضویت ذوزنقه‌ای}
+تابع عضویت ذوزنقه‌ای
+\LTRfootnote{Trapezoidal}،
+ نوعی تابع خطی قطعه به قطعه است که با ۴ پارامتر $(a, m, n, b)$ تعریف می‌شود. هر یک از این پارامترها، یکی از چهار قسمت تابع عضویت را مشخص می‌کنند. تعریف این تابع به شرح ذیل است:
+\begin{equation}\label{eq:e_fset_memfunc_trapezoidal}
+trapezoidal (x: a, m, n, b) = \left\{ 
+\begin{array}{cl}
+0 &  x \leq a, \\ 
+\mathlarger{\frac{x-a}{m-a}} & a<x<m, \\ 
+1 & m \leq x \leq n, \\
+\mathlarger{ \frac{b-x}{b-n}} & n<x<b, \\
+0 & x \geq b.
+\end{array}
+\right.
+\end{equation}
+پارامترهای $a$ و $b$، به ترتیب ابتدا و انتهای بازه هستند و پارامترهای $m$ و $n$، بیانگر قسمت هم سطح تابع می‌باشند.(شکل \ref{fig:f_15})
+\cite{Pedrycz2007}
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=75mm]{Images/Fig15.png}
+	\vspace{-0.5cm}
+	\caption{نمونه‌ای از تابع عضویت ذوزنقه‌ای}\label{fig:f_15}
+\end{figure}
+\paragraph{تابع عضویت گوسی}
+تابع عضویت گوسی
+\LTRfootnote{Gaussian}،
+ با استفاده از دو پارامتر $(a, \sigma)$ تعریف می‌شود. این تابع به شرح ذیل است:
+\begin{equation}\label{eq:e_fset_memfunc_gausi}
+gaussian (x: a, \sigma) = \exp \left( - \frac{(x-m)^2}{\sigma^2} \right)
+\end{equation}
+پارامتر $a$، نقطه‌ی رأس تابع و $\sigma$ میزان پهنای تابع عضویت را مشخص می‌کند. مقادیر بالاتر $\sigma$، باعث گستره‌ی بیشتر تابع عضویت می‌شود.(شکل \ref{fig:f_16})
+\cite{Pedrycz2007}
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=75mm]{Images/Fig16.png}
+	\vspace{-0.5cm}
+	\caption{نمونه‌ای از تابع عضویت گوسی}\label{fig:f_16}
+\end{figure}
+\paragraph{تابع عضویت زنگوله‌ای}
+تابع عضویت زنگوله‌ای
+\LTRfootnote{Bell Shape}،
+با استفاده از سه پارامتر $(a, b, c)$ تعریف می‌شود. این تابع به شرح ذیل است:
+\begin{equation}\label{eq:e_fset_memfunc_bellshape}
+bell\ shape (x: a, b, c) = \frac{1}{1+ \mathlarger{ \left| \frac{x-c}{a}\right| ^{2b}} }
+\end{equation}
+پارامتر $c$، مرکز تابع عضویت را نشان می‌دهد. همچنین پارامتر $b$، شیب و پارامتر $a$ پهنای تابع را مشخص می‌کند.(شکل \ref{fig:f_17})
+ \\
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=75mm]{Images/Fig17.png}
+	\vspace{-0.5cm}
+	\caption{نمونه‌ای از تابع عضویت زنگوله‌ای}\label{fig:f_17}
+\end{figure}
+در شکل 
+\ref{fig:f_20}
+نیز تغییرات پارامترهای تابع و نحوه‌ی تاثیر آنها نشان داده شده است. 
+\cite{yen1999fuzzy}
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=75mm]{Images/Fig20.png}
+	\vspace{-0.5cm}
+	\caption{تغییر پارامترهای تابع زنگوله‌ای و نحوه تاثیر آنها بر تابع}\label{fig:f_20}
+\end{figure}
+\paragraph{تابع عضویت سیگمویدال}
+تابع عضویت سیگمویدال
+\LTRfootnote{Sigmoidal}،
+با استفاده از دو پارامتر $(a, c)$ تعریف می‌شود. این تابع به شرح ذیل است:
+\begin{equation}\label{eq:e_fset_memfunc_sigmoidal}
+sigmoidal (x: a, c) = \frac{1}{1+\mathlarger{e^{-a(x-c)}}} 
+	\end{equation}
+	پارامتر $a$، شیب و پارامتر $c$، مرکز تابع را مشخص می‌کند.(شکل \ref{fig:f_18})
+\cite{yen1999fuzzy}
+	\begin{figure}[h]
+		\centering 
+		\includegraphics[width=75mm]{Images/Fig18.png}
+		\vspace{-0.5cm}
+		\caption{نمونه‌ای از تابع عضویت سیگمویدال}\label{fig:f_18}
+	\end{figure}
+%**************************************************************************
  \subsection{‌اعداد فازی} 
- 
-  \subsubsection{ ‌اعداد فازی قطعه به قطعه درجه دوم}
-  \subsubsection{‌اعداد فازی مثلثی}
-  \subsubsection{‌اعداد فازی ذوزنقه‌ای}
+ اگر یک مجموعه‌ی فازی \textit{محدب} و \textit{نرمال} باشد و تابع عضویت آن در 
+ $\Re$
+ تعریف شود، به آن عدد فازی گویند. بنابراین عدد فازی (مجموعه فازی)، بازه‌ی عددی حقیقی را نشان می‌دهد که ابتدا و انتهای بازه، فازی هستند.
+ \cite{Lee2005}
+  اعداد فازی برای توصیف غیر دقیق اعداد استفاده می‌شوند. 
+  به عنوان مثال در شکل 
+ \ref{fig:f_convset}
+ مجموعه‌ی (a) عدد فازی است و مجموعه‌ی (b) نیست.
+ %***********************************************************************
+  \subsection{‌متغیرهای کلامی}
+  مفهوم اعداد فازی، نقش مهمی در فرموله کردن کمی متغیرهای فازی دارند. اعداد فازی می‌توانند بیانگر مفاهیم کلامی مانند خیلی کوچک، کوچک، متوسط و... باشند. بدین ترتیب می‌توان با استفاده از اعداد فازی متغیرهای کلامی
+  \LTRfootnote{Linguistic Variable}
+   را ایجاد کرد. \\
+   هر متغیر کلامی شامل حالت‌هایی است که توسط عبارات کلامی
+   \LTRfootnote{Linguistic Terms}
+   بیان می‌شوند. هریک از این عبارات، عددی فازی هستند که بر پایه‌ی آن متغیر، در بازه‌ای مشخص تعریف می‌شوند و مقادیر تقریبی از متغیر کلامی را نشان می‌دهند. \\
+   مثالی از متغیر کلامی در شکل
+   \ref{fig:f_19}
+   آورده شده است. در این مثال، «عملکرد»
+   \LTRfootnote{Performance}
+   متغیری کلامی است که توسط عبارات کلامی «خیلی کم، کم، متوسط، زیاد، خیلی زیاد» تعریف شده است. این عبارات هر کدام توسط عددی فازی مشخص شده‌اند. تابع عضویت این مجموعه‌های فازی، یک تابع ذوزنقه‌ای در نظر گرفته شده است. بازه‌ی متغیر کلامی نیز $[1, 100]$ می‌باشد. 
+     \cite{Klir1995}
+   \\
+   به عنوان مثال اگر میزان عملکرد (انسان، ماشین، سازمان، روش و...)، برابر ۸۳.۷۵ باشد، با درجه عضویت ۰.۵ به مجموعه‌ی «عملکرد خیلی زیاد» و با درجه‌ عضویت ۰.۵ به مجموعه‌ی «عملکرد زیاد» تعلق دارد. همچنین این میزان عملکرد نه متوسط است، نه کم و نه خیلی کم. 
+
+  	\begin{figure}[h]
+  	\centering 
+  	\includegraphics[width=125mm]{Images/Fig19.png}
+  	\vspace{-0.5cm}
+  	\caption{مثالی از متغیرهای کلامی}\label{fig:f_19}
+  \end{figure}
  \subsection{رابطه‌های فازی}
  \subsection{عملیات بر روی رابطه‌های فازی}
-%********************************Fuzzy Logic************************
-\section{منطق فازی}
 %********************************Other Sctions***********************
+\section{منطق فازی}
 \section{کاربرد میانگین فازی برای پیش‌بینی}
 \section{تصمیم‌گیری در محیط فازی}
 \section{کاربرد کنترل فازی}
 \section{مفاهیم اولیه هوش مصنوعی}
 \section{جستجوی آگاهانه و ناآگاهانه}
 %*******************************References**************************
-\bibliographystyle{ieeetr-fa}
-\bibliography{Ref}
+\newpage
+\begin{latin}
+{
+	\small
+	\setlength{\itemsep}{-2ex}
+	\renewcommand{\refname}{\rl{{مراجع}\hfill}}
+	\bibliographystyle{ieeetr-fa}%{latex8}%{IEEEtrans}
+	\bibliography{Ref}
+}
+\end{latin}
 \end{document}
