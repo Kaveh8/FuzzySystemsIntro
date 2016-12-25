@@ -1,0 +1,57 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[scale=0.75]{geometry} 
+\usepackage[pagebackref=true,colorlinks,linkcolor=blue,citecolor=magenta]{hyperref}
+\usepackage{tocbibind}
+\usepackage{ragged2e}
+\usepackage{xepersian}
+\usepackage{relsize} %math-large
+
+\settextfont[Scale=1]{XB Niloofar}
+\setlatintextfont{Linux Libertine}
+
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+
+\theoremstyle{definition}
+\newtheorem{exmp}{مثال}[section]
+
+\title{‌سیستم‌های فازی و هوش مصنوعی}
+\author{کاوه شاه‌حسینی}
+
+\begin{document}
+%*******************Cover Page****************************
+\include{00-CoverPage}
+%********************Table of Content**********************
+\newpage
+\baselineskip=1cm
+\tableofcontents
+\newpage
+\listoftables
+\listoffigures
+\baselineskip=.75cm
+\newpage 
+%*******************Fuzzy Sets***************************
+\include{01-FuzzySets}
+%*****************Other Sctions***************************
+\section{منطق فازی}
+\section{کاربرد میانگین فازی برای پیش‌بینی}
+\section{تصمیم‌گیری در محیط فازی}
+\section{کاربرد کنترل فازی}
+\section{مفاهیم اولیه هوش مصنوعی}
+\section{جستجوی آگاهانه و ناآگاهانه}
+%**************References*******************************
+\newpage
+\begin{latin}
+{
+	\small
+	\setlength{\itemsep}{-2ex}
+	\renewcommand{\refname}{\rl{{مراجع}\hfill}}
+	\bibliographystyle{ieeetr-fa}%{latex8}%{IEEEtrans}
+	\bibliography{Ref}
+}
+\end{latin}
+%**********************************************************
+\end{document}
